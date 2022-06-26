@@ -1,5 +1,6 @@
 const express = require('express')
 const app = new express()
+const favicon = require('serve-favicon')
 require('dotenv').config()
 const passport = require('passport')
 const moment = require('moment'); // require
@@ -8,6 +9,7 @@ const path = require('path')
 const {engine} = require('express-handlebars')
 const connectDB = require('./config/db')
 const session = require('express-session')
+
 
 require('./config/passport')(passport)
 
